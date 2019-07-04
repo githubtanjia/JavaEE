@@ -1,4 +1,4 @@
-package cn.tanjia.练习;
+package cn.tanjia.practice;
 
 import java.util.*;
 

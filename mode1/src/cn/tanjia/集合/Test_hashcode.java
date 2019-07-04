@@ -1,7 +1,4 @@
-package cn.tanjia.jihe;
-
-import java.util.Collection;
-import java.util.Collections;
+package cn.tanjia.集合;
 
 /**
  * @Author: tanjia

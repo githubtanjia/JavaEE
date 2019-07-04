@@ -1,4 +1,4 @@
-package cn.tanjia.jihe;
+package cn.tanjia.集合;
 
 import java.util.*;
 
