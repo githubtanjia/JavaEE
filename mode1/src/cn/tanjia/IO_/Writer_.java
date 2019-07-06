@@ -20,7 +20,7 @@ import java.io.IOException;
 public class Writer_ {
     public static void main(String[] args) throws IOException {
 
-        FileWriter fw = new FileWriter("F:\\file2\\aaaa.txt");
+        FileWriter fw = new FileWriter("F:\\file2\\aaaa.txt",true);
         fw.write(97);
         fw.write("去");
         fw.write('a');
