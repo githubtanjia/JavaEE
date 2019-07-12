@@ -5,4 +5,7 @@ package cn.tanjia;
  * @Date: 2019/7/12 14:17
  */
 public class d {
+    public static void main(String[] args) {
+
+    }
 }
