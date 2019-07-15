@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/mode1/mode1.iml" filepath="$PROJECT_DIR$/mode1/mode1.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode2/mode2.iml" filepath="$PROJECT_DIR$/mode2/mode2.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode3-redis/mode3-redis.iml" filepath="$PROJECT_DIR$/mode3-redis/mode3-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mode4-cookie_session/mode4-cookie_session.iml" filepath="$PROJECT_DIR$/mode4-cookie_session/mode4-cookie_session.iml" />
     </modules>
   </component>
 </project>
