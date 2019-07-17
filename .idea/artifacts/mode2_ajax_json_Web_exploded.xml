@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mode2-ajax_json:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mode2_ajax_json_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="mode2-ajax_json/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mode2-ajax_json" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="module" name="JUnit4" module-name="mode2-ajax_json" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
