@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.UserDao">
+
+    <cache></cache>
+
+    <!-- 假如数据库字段和实体类属性不一致：
+        1，sql给数据库字段起别名（别名和实体类属性一样）
+        2，配置数据库字段和实体类属性对应关系
+     -->
+    <resultMap id="userMap" type="user">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+    </resultMap>
+
+    <resultMap id="userAccountsMap" type="user">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+        <!--<collection property="accounts" ofType="account">
+            <id column="id" property="id"></id>
+            <result column="uid" property="uid"></result>
+            <result column="name" property="name"></result>
+        </collection>-->
+        <collection property="accounts" column="id" select="cn.dao.AccountDao.findByUid"></collection>
+    </resultMap>
+
+    <!-- 插入相关 -->
+    <insert id="saveUser" parameterType="cn.domain.User">
+        insert into user (username,birthday,sex) values(#{username},#{birthday},#{sex});
+    </insert>
+
+    <!-- 删除相关 -->
+    <delete id="deleteUser" parameterType="Integer">
+        delete from user where id=#{id}
+    </delete>
+
+
+    <!-- 更新相关 -->
+    <update id="updateUser" parameterType="cn.domain.User">
+        update user set username=#{username},birthday=#{birthday},sex=#{sex} where id=#{id}
+    </update>
+
+
+    <!--查询相关-->
+    <select id="findAll" resultMap="userMap">
+        select * from user
+    </select>
+    <select id="findByUsername" resultType="cn.domain.User" parameterType="String">
+        select * from user where username like #{username}
+    </select>
+    <select id="findById" resultType="cn.domain.User" parameterType="int" useCache="true">
+        select * from user where id = #{id}
+    </select>
+    <select id="count" resultType="int" parameterType="String">
+        select count(*) from user where sex = #{sex}
+    </select>
+    <select id="findUserByCondition" resultMap="userMap" parameterType="user">
+        select * from user
+        <where>
+            <if test="username != null ">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+        </where>
+    </select>
+
+    <select id="findAll2" resultMap="userAccountsMap">
+      <!-- select * from user u left outer join account a on u.id=a.uid -->
+      select * from user
+    </select>
+
+
+
+</mapper>

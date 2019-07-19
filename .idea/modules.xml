@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCdemo1/SpringMVCdemo1.iml" filepath="$PROJECT_DIR$/SpringMVCdemo1/SpringMVCdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCdemo2/SpringMVCdemo2.iml" filepath="$PROJECT_DIR$/SpringMVCdemo2/SpringMVCdemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springdemo1/Springdemo1.iml" filepath="$PROJECT_DIR$/Springdemo1/Springdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springdemo2/Springdemo2.iml" filepath="$PROJECT_DIR$/Springdemo2/Springdemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springdemo3_AOP/Springdemo3_AOP.iml" filepath="$PROJECT_DIR$/Springdemo3_AOP/Springdemo3_AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springdemo4_TX/Springdemo4_TX.iml" filepath="$PROJECT_DIR$/Springdemo4_TX/Springdemo4_TX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springdemo5_Spring_tx/Springdemo5_Spring_tx.iml" filepath="$PROJECT_DIR$/Springdemo5_Spring_tx/Springdemo5_Spring_tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode1-basic/mode1-basic.iml" filepath="$PROJECT_DIR$/mode1-basic/mode1-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode2-ajax_json/mode2-ajax_json.iml" filepath="$PROJECT_DIR$/mode2-ajax_json/mode2-ajax_json.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode3-redis/mode3-redis.iml" filepath="$PROJECT_DIR$/mode3-redis/mode3-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/mode4-cookie_session/mode4-cookie_session.iml" filepath="$PROJECT_DIR$/mode4-cookie_session/mode4-cookie_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisdemo1/mybatisdemo1.iml" filepath="$PROJECT_DIR$/mybatisdemo1/mybatisdemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/ssm.iml" filepath="$PROJECT_DIR$/ssm/ssm.iml" />
     </modules>
   </component>
 </project>
