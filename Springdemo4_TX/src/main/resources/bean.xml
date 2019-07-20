@@ -42,7 +42,6 @@
         <!-- 注入ConnectionUtils -->
         <property name="connectionUtils" ref="connectionUtils"></property>
     </bean>
-
     <!--配置aop-->
     <aop:config>
         <!--配置通用切入点表达式-->
